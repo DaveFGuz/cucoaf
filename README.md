@@ -1,2 +1,2 @@
 # cucoaf
-proyecto de analisis financiero
+proyecto de analisis financieros
