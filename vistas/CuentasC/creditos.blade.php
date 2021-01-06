@@ -148,7 +148,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Gestionar Creditos</h3>
+    <h3 align="center" >Gestionar Créditos</h3>
     </div>
     </div>
     </div>
