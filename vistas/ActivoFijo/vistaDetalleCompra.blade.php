@@ -96,11 +96,11 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Comprar.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/Comprar.blade.php";
   }
 
 function envia1(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/depreciar.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/depreciar.blade.php";
   }
  //funcion para que la tabla se llene dinamicamente
   
@@ -121,7 +121,7 @@ function envia1(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Detalles de Activo Fijo</h3>
+    <h2 class="col-lg-offset-5" ><strong> DETALLE DE ACTIVO FIJO</strong></h2>
     </div>
     </div>
     </div>
@@ -136,7 +136,7 @@ function envia1(){
 
 
                                  
- <div class="col-sm-12 col-md-12">
+ <div class="col-sm-12 col-md-12 col-lg-offset-1">
 
 
   <div class="panel-body">
@@ -148,7 +148,7 @@ function envia1(){
 <table class="table table-list-search table-bordered table-hover">
 <thead>
 
-                      <tr style="background-color: #90327A">
+                      <tr style="background-color: #36a54c ">
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="100" HEIGHT='9' >Valor</th>

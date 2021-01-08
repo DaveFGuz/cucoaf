@@ -95,13 +95,13 @@ $con=mysqli_connect('localhost','root','','finanzas');
 function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Comprar.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/comprarInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/ActivoFijo/Comprar.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/ActivoFijo/comprarInactivo.blade.php";}
 
 }
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/compraNueva2.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/compraNueva2.blade.php";
   }
 
  //funcion para que la tabla se llene dinamicamente
@@ -159,7 +159,7 @@ $resultado2 = $mysqli->query($sql2);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Adquisicion de activo fijo</h3>
+    <h2 class="col-lg-offset-6" ><strong>COMPRA DE ACTIVO FIJO</strong></h2>
     </div>
     </div>
     </div>
@@ -173,15 +173,15 @@ $resultado2 = $mysqli->query($sql2);
   <div class="col-md-9 col-md-offset-3"  style=" margin-left: 58px;">
 
 
- <div class="col-md-2 ">
+ <div class="col-md-3 ">
 <div class="form-group">
 
   <label for="condi">Condicion </label>
  <select class="form-control" data-live-search="true" id="condi" name="condi" onchange="sele()" >
 <option></option> 
-<option value="1" >Activo</option>
+<option value="1"  >ACTIVO</option>
  
-<option value="0">Inactivo </option>
+<option value="0" selected >INACTIVO </option>
 </select>
 </div>
 </div> 
@@ -219,7 +219,7 @@ $cont=0;
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
 
-                      <tr class="color-apariencia">
+                      <tr style="background-color: #36a54c">
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>

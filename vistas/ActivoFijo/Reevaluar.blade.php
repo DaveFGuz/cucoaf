@@ -137,7 +137,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Reevaluación de  Activo fijo</h3>
+    <h2 class="col-lg-offset-5" ><strong>REVALUACION DE ACTIVO FIJO</strong></h2>
     </div>
     </div>
     </div>
@@ -183,7 +183,7 @@ $cont1=0;
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
 
-                     <tr style="background-color: #90327A">
+                     <tr style="background-color: #36a54c">
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>

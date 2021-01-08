@@ -92,8 +92,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
 function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Movimiento.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/MovimientoInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/ActivoFijo/Movimiento.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/ActivoFijo/MovimientoInactivo.blade.php";}
 
 }
   
@@ -145,7 +145,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >MOVIMIENTOS DE ACTIVOS</h3>
+    <h2 class="col-lg-offset-6" ><strong>GESTIONAR MOVIMIENTO</strong></h2>
     </div>
     </div>
     </div>
@@ -160,18 +160,18 @@ $resultado = $mysqli->query($sql);
      <div class="col-md-3">
    <br>
  <div class="form-group">
-<button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarProveedor" style="background-color: #90327A"  >Nuevo Movimiento</button>
+<button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarProveedor" style="background-color: #4c9ea0"  >Nuevo Movimiento</button>
 </div>
 </div>
-<div class="col-md-2 ">
+<div class="col-md-3 col-lg-offset-2 ">
 <div class="form-group">
 
-  <label for="condi">Estado :</label>
+  <label for="condi"></label>
  <select class="form-control" data-live-search="true" id="condi" name="condi" onchange="sele()">
-<option>Seleccionar</option> 
-<option value="1" >ACTIVO</option>
+<optiondisabled >Seleccionar estado</option> 
+<option value="1" selected >MOVIMIENTOS ACTIVOS</option>
  
-<option value="0">INACTIVO</option>
+<option value="0">MOVIMIENTOS INACTIVOS</option>
 </select>
 </div>
 </div> 
@@ -207,7 +207,7 @@ $cont=0;
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
 
-                    <tr style="background-color: #90327A">
+                    <tr style="background-color: #36a54c">
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>
@@ -264,7 +264,7 @@ $cont=$cont+1;
 <!--Modal  Registrar Proveedor-->
 
 <div id="ModalRegistarProveedor" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-sm">
 
     <!-- Modal content-->
 <form  action="insert.php" method="post" class="form-register" > 
@@ -272,8 +272,8 @@ $cont=$cont+1;
     <div class="color-moduloInventario">
       <div class="modal-header" >
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <div class="col-md-offset-5">
-        <h4 class="modal-title">Ingresar Movimiento</h4></div>
+        <div class="col-md-offset-3">
+        <h4 class="modal-title">Nuevo Movimiento</h4></div>
       </div>
       </div>
        <div class="modal-body">
@@ -287,14 +287,14 @@ $cont=$cont+1;
 
 </div>
 
-<div class="col-md-7 col-md-offset-2">
+<div class="col-md-12">
 
-<div class="col-md-6">
+<div class="col-md-12">
 <div class="input-group">
 
   <label for="nombMov" >Nombre:</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="nombMov" name="nombMov" placeholder="Nombre">
+  <input type="text" class="form-control" id="nombMov" name="nombMov" required placeholder="Nombre">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 </div>

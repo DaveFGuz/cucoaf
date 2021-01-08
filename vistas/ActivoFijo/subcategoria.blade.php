@@ -94,8 +94,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
     function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/subcategoria.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/subcategoriaInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/ActivoFijo/subcategoria.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/ActivoFijo/subcategoriaInactivo.blade.php";}
 
 }
     $(document).ready(function () {
@@ -146,7 +146,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Gestionar Sub-Categorias</h3>
+    <h2 class="col-lg-offset-5" ><strong>GESTIONAR SUB-CATEGORIA</strong></h2>
     </div>
     </div>
     </div>
@@ -163,20 +163,20 @@ $resultado = $mysqli->query($sql);
 <div class="col-md-3">
 <br>
  <div class="form-group">
-<button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarProveedor"  style="background-color: #90327A">Nueva Sub-Categoria</button>
+<button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarProveedor"  style="background-color: #4c9ea0 ">Nueva Sub-Categoria</button>
 
    </div>
    </div>
 
-<div class="col-md-2 ">
+<div class="col-md-3 col-lg-offset-1 ">
 <div class="form-group">
 
-  <label for="condi">Estado :</label>
+  <label for="condi"></label>
  <select class="form-control" data-live-search="true" id="condi" name="condi" onchange="sele()">
-<option>Seleccionar</option> 
-<option value="1" >ACTIVO</option>
+<option disabled>Selecciona estado</option> 
+<option value="1" selected >SUB-CATEGORIAS ACTIVAS</option>
  
-<option value="0">INACTIVO</option>
+<option value="0">SUB-CATEGORIAS INACTIVAS</option>
 </select>
 </div>
 </div> 
@@ -213,13 +213,13 @@ $cont=0;
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
 
-                <tr style="background-color: #90327A">
+                <tr style="background-color: #36a54c" >
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>
     <th scope="col" style="color:#FFFFFF">Código</th>
     <th scope="col" style="color:#FFFFFF">Nombre</th>
-    <th scope="col" style="color:#FFFFFF" WIDTH="200" HEIGHT='9'>Opciones</th>
+    <th scope="col" style="color:#FFFFFF" WIDTH="120" HEIGHT='9'>Opciones</th>
   </tr>
   </thead>
   <tbody class="contenidobusqueda">
@@ -278,7 +278,7 @@ $aux=$ejecuta['idcat'];
 <!--Modal  Registrar Proveedor-->
 
 <div id="ModalRegistarProveedor" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-md">
 
     <!-- Modal content-->
 <form  action="insert.php" method="post" class="form-register" > 
@@ -295,12 +295,9 @@ $aux=$ejecuta['idcat'];
   <div class="col-md-12">
 
 
-<div class="col-md-3 ">
-<br>
 
-</div>
 
-<div class="col-md-5 col-md-offset-1">
+<div class="col-md-12">
 
 
 <div class="form-group">
@@ -356,7 +353,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 
   <label for="codsub" >Código:</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="codsub" name="codsub" placeholder="Ejemplo : 0001">
+  <input type="text" class="form-control" id="codsub"  name="codsub" placeholder="Ejemplo : 0001">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 </div>

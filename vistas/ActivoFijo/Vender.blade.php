@@ -141,7 +141,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Realizar Venta</h3>
+    <h2 class="col-lg-offset-6" ><strong>REALIZAR DE VENTA</strong></h2>
     </div>
     </div>
     </div>
@@ -181,10 +181,11 @@ function envia(){
 
 $cont1=0;
 ?>
-<div class="row thumbnail">
+<div class="row thumbnail" style="width: 95%;
+    margin-left:60px;">
 
 
-<table class="table table-list-search table-bordered table-hover" id="tabla1">
+<table class="table table-list-search table-bordered table-hover"  id="tabla1">
 <thead>
 
                         <tr 

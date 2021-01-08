@@ -107,7 +107,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Vender</h3>
+    <h2 class="col-lg-offset-6" ><strong>DETALLE DE VENTA</strong></h2>
     </div>
     </div>
     </div>
@@ -314,7 +314,7 @@ var aux=0;
 
 <input  type="hidden" class="form-control" id="ideU" name="ideU" placeholder="Nombre" value="<?php echo $_POST['btnEditar'];?>">
 
-  <div class="col-lg-12 col-md-offset-5">
+  <div class="col-lg-12 col-md-offset-4">
 <br>
 <br> 
 <div class="button-group">

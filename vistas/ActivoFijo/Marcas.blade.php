@@ -97,8 +97,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
   function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Marcas.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/MarcasInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/ActivoFijo/Marcas.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/ActivoFijo/MarcasInactivo.blade.php";}
 
 }
     $(document).ready(function () {
@@ -158,7 +158,7 @@ $resultado = $mysqli->query($sql);
 
 
 
-    <h3 align="center" >MARCAS</h3>
+    <h2 class="col-lg-offset-6" ><strong>GESTIONAR MARCAS</strong></h2>
     </div>
     </div>
     </div>
@@ -173,18 +173,18 @@ $resultado = $mysqli->query($sql);
    <div class="col-md-3">
    <br>
  <div class="form-group">
-<button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarProveedor" style="background-color: #90327A" >Ingresar Marca</button>
+<button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarProveedor" style="background-color: #4c9ea0" >Ingresar Marca</button>
 </div>
 </div>
-   <div class="col-md-2 ">
+   <div class="col-md-3 col-lg-offset-1">
 <div class="form-group">
 
-  <label for="condi">Estado :</label>
+  <label for="condi"></label>
  <select class="form-control" data-live-search="true" id="condi" name="condi" onchange="sele()">
-<option> Seleccionar</option> 
-<option value="1" >ACTIVO</option>
+<option disabled> Seleccione un estado</option> 
+<option value="1" selected >MARCAS ACTIVAS</option>
  
-<option value="0">INACTIVO</option>
+<option value="0">MARCAS INACTIVAS</option>
 </select>
 </div>
 </div> 
@@ -220,7 +220,7 @@ $cont=0;
 
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
-<tr style="background-color: #90327A">
+<tr style="background-color: #36a54c">
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>
@@ -285,7 +285,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 <!--Modal  Registrar Proveedor-->
 
 <div id="ModalRegistarProveedor" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-sm">
 
     <!-- Modal content-->
 <form  action="insert.php" method="post" class="form-register" > 
@@ -293,8 +293,8 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
     <div class="color-moduloInventario">
       <div class="modal-header" >
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <div class="col-md-offset-5">
-        <h4 class="modal-title">NUEVA MARCA/h4>
+        <div class="col-md-offset-4">
+        <h4 class="modal-title">NUEVA MARCA</h4>
         </div>
       </div>
       </div>
@@ -304,14 +304,14 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
   <div class="col-md-12">
 
 
-<div class="col-md-3 ">
+<div class="col-md-12 ">
 
 
 </div>
 
-<div class="col-md-7 col-md-offset-1">
+<div class="col-md-12 ">
 
-<div class="col-md-6">
+<div class="col-md-12">
 <div class="input-group">
 
   <label for="nombProd" >Nombre:</label>

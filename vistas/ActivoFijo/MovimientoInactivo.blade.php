@@ -94,8 +94,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
    function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Movimiento.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/MovimientoInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/ActivoFijo/Movimiento.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/ActivoFijo/MovimientoInactivo.blade.php";}
 
 }
     $(document).ready(function () {
@@ -148,7 +148,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Movimientos Inactivos</h3>
+    <h2 class="col-lg-offset-6" ><strong>GESTION DE MOVIMIENTO</strong></h2>
     </div>
     </div>
     </div>
@@ -162,15 +162,17 @@ $resultado = $mysqli->query($sql);
   <div class="col-md-9 col-md-offset-3" style=" margin-left: 58px;">
   
 
-<div class="col-md-2 ">
+<div class="col-md-3 col-md-offset-5 ">
 <div class="form-group">
 
-  <label for="condi">Estado :</label>
+  <label for="condi"></label>
  <select class="form-control" data-live-search="true" id="condi" name="condi" onchange="sele()">
-<option></option> 
-<option value="1" >Activo</option>
+
+<option  disabled >Seleccione un estado</option>
+
+<option value="1" >MOVIMIENTOS ACTIVOS</option>
  
-<option value="0">Inactivo </option>
+<option value="0" selected >MOVIMIENTO INACTIVOS </option>
 </select>
 </div>
 </div> 

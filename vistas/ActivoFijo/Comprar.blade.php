@@ -91,13 +91,13 @@ $con=mysqli_connect('localhost','root','','finanzas');
 function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Comprar.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/comprarInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/ActivoFijo/Comprar.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/ActivoFijo/comprarInactivo.blade.php";}
 
 }
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/compraNueva2.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/compraNueva2.blade.php";
   }
 
 
@@ -158,7 +158,7 @@ $resultado2 = $mysqli->query($sql2);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Compra de Activo Fijo</h3>
+    <h2 class="col-lg-offset-6" ><strong>COMPRA DE ACTIVO FIJO</strong></h2>
     </div>
     </div>
     </div>
@@ -175,16 +175,16 @@ $resultado2 = $mysqli->query($sql2);
   <div class="col-md-3">
   <br>
  <div class="form-group">
-<button type="button"  class="btn btn-primary" data-toggle="modal" onclick="envia()" style="background-color: #90327A" >Nuevo Activo Fijo</button>
+<button type="button"  class="btn btn-primary" data-toggle="modal" onclick="envia()" style="background-color: #4c9ea0  " >Nuevo Activo Fijo</button>
  </div> 
   </div>
-  <div class="col-md-2 ">
+  <div class="col-md-3 ">
 <div class="form-group">
 
-  <label for="condi">Estado :</label>
+  <label for="condi">condicion :</label>
  <select class="form-control" data-live-search="true" id="condi" name="condi" onchange="sele()">
-<option>Seleccionar</option> 
-<option value="1" >ACTIVO</option>
+<option></option> 
+<option value="1" selected >ACTIVO</option>
  
 <option value="0">INACTIVO</option>
 </select>
@@ -224,7 +224,7 @@ $cont1=0;
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
 
-                     <tr style="background-color: #90327A">
+                     <tr style="background-color: #36a54c" >
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>

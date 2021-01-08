@@ -96,8 +96,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
  function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/RegistroProveedor.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/RegistroProveedorInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/ActivoFijo/RegistroProveedor.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/ActivoFijo/RegistroProveedorInactivo.blade.php";}
 
 }
  //funcion para que la tabla se llene dinamicamente
@@ -149,7 +149,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >NUEVO PROVEEDOR</h3>
+    <h2 class="col-lg-offset-6" ><strong>GESTION DE PROVEEDOR</strong></h2>
     </div>
     </div>
     </div>
@@ -160,28 +160,28 @@ $resultado = $mysqli->query($sql);
  <div class="col-md-2"></div>
 
 
-  <div class="col-md-9 col-md-offset-3" style=" margin-left: 58px;">
+  <div class="col-md-9 col-md-offset-4" style=" margin-left: 80px;">
  <div class="col-md-3">
 <br>
  <div class="form-group">  
-<button type="button"  class="btn btn-primary " data-toggle="modal" data-target="#ModalRegistarProveedor" style="background-color: #90327A" >Registrar Proveedor</button>
+<button type="button"  class="btn btn-primary " data-toggle="modal" data-target="#ModalRegistarProveedor" style="background-color: #4c9ea0" >Registrar Proveedor</button>
 </div>
 </div>
 
-<div class="col-md-4 ">
+<div class="col-md-3 col-lg-offset-1 ">
 <div class="form-group">
 
-  <label for="condi">Estado :</label>
+  <label for="condi"></label>
  <select class="form-control" data-live-search="true" id="condi" name="condi" onchange="sele()">
-<option>Seleccione un estado</option>
-<option value="1" >ACTIVO</option> 
-<option value="0">INACTIVO</option>
+ <option value="" >Seleccione un estado</option> 
+<option selected value="1" >PROVEEDORES ACTIVOS</option> 
+<option value="0">PROVEEDORES INACTIVOS</option>
 </select>
 </div>
 </div> 
 
                                  
- <div class="col-sm-12 col-md-12">
+ <div class="col-sm-12 col-lg-12">
   
   <div class="panel-body">
 
@@ -208,10 +208,10 @@ $cont=0;
 <div class="row thumbnail">
 
 
-<table class="table table-list-search table-bordered table-hover" id="tabla1">
+<table class="table table-list-search table-bordered table-hover " id="tabla1">
 <thead>
 
-                         <tr style="background-color: #90327A">
+                         <tr style="background-color: #36a54c">
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>
     <th scope="col" style="color:#FFFFFF">Nombre</th>
@@ -274,7 +274,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 <!--Modal  Registrar Proveedor-->
 
 <div id="ModalRegistarProveedor"  class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-md">
 
     <!-- Modal content-->
 <form  action="insert.php" method="post" class="form-register" > 
@@ -296,7 +296,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 
 </div>
 
-<div class="col-md-10">
+<div class="col-md-12">
 
 <div class="col-md-6">
 <div class="input-group">
@@ -380,10 +380,10 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 </div>
 </div> 
 
-<div class="modal-footer">
+<div class="modal-footer  " >
 
-        <button type="submit" style="background-color: #2D943E" class="btn btn-primary">Guardar</button>
-        <button type="button" style="background-color: #A42727" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+        <button type="submit" style="background-color: #2D943E" class=" btn btn-primary">Guardar</button>
+        <button type="button" style="background-color: #A42727" class=" btn btn-primary" data-dismiss="modal">Cancelar</button>
         </div>
  </div>
   
