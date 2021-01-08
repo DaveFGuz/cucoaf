@@ -119,11 +119,11 @@ body {
               <h2 style="color: #000304; margin-left:120px;font-family:monospace;font-weight:bold;color:#ffff">USUARIO</h2>
               <br>
               <div>
-                <input type="text" class="form-control" placeholder="ingrese usuario" id="usuario" name="usuario" required="true" />
+                <input type="text" class="form-control" placeholder="Ingrese Usuario" id="usuario" name="usuario" required="true" />
               </div>
               <br>
               <div>
-                <input type="password"  class="form-control" placeholder="ingrese contraseña" id="contra" name="contra" required="true" />
+                <input type="password"  class="form-control" placeholder="Ingrese Contraseña" id="contra" name="contra" required="true" />
               </div>
               <br>
               <br>
