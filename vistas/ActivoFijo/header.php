@@ -49,7 +49,7 @@ echo "</script>";
             </a>
             <ul class="dropdown-menu" >
               <!-- User image -->
-              <li class="user-header" style="background:#337ab7;">
+              <li class="user-header" style="background:#00a65a;">
                 <img src="../dist/img/avatar.png" class="img-circle" alt="User Image">
 
                 <p>
