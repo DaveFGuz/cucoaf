@@ -110,7 +110,8 @@ ini_set('date.timezone', 'America/El_Salvador');
 		<tr>
 			<td></td>
 			<td style="font-size: 80%; text-align:center; vertical-align:middle">REPORTE DE PROVEEDORES INACTIVOS</td>
-			<td></td>			
+			<div style="text-align: right;"><a  class="btn btn-primary" href="http://localhost/cucoaf/vistas/ActivoFijo/ImpresionProveedoresInactivos.php" target="_blank"">Imprimir</a>
+      </div>		
 		</tr>		
 	</thead>
 </table>

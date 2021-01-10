@@ -109,8 +109,9 @@ ini_set('date.timezone', 'America/El_Salvador');
 
 		<tr>
 			<td></td>
-			<td style="font-size: 80%; text-align:center; vertical-align:middle">REPORTE DE ACTIVOS</td>
-			<td></td>			
+			<td style="font-size: 80%; text-align:center; vertical-align:middle">REPORTE DE ACTIVOS INACTIVOS</td>
+			<div style="text-align: right;"><a  class="btn btn-primary" href="http://localhost/cucoaf/vistas/ActivoFijo/ImpresionActivosInactivos.php" target="_blank"">Imprimir</a>
+      </div>		
 		</tr>		
 	</thead>
 </table>
