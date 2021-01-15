@@ -181,7 +181,7 @@ ini_set('date.timezone', 'America/El_Salvador');
 $Hoy=date("Y/m/d");//fecha de adquisicion
 $vidautil=0; 
 $est=1;
- $dona="";
+$dona="";
   $aux=$_POST['idac'];
   $aux2=$_POST['dona'];
   $aux3=$_POST['condi'];
@@ -190,14 +190,14 @@ $est=1;
   }else{$dona="NO";}
 if ($aux3=="Nuevo"){
   $sentencia2 = "SELECT idCat FROM activo WHERE idAc='$aux'"; 
-   $ejecutar2=mysqli_query($con,$sentencia2);
-   $fila2 = mysqli_fetch_assoc($ejecutar2);
-   $sentencia1 = "SELECT vidautil FROM categoria WHERE idCat='$fila2[idCat]'"; 
-   $ejecutar1=mysqli_query($con,$sentencia1);
-   $fila1 = mysqli_fetch_assoc($ejecutar1);
-    $vidautil=$fila1[vidautil];
+  $ejecutar2=mysqli_query($con,$sentencia2);
+  $fila2 = mysqli_fetch_assoc($ejecutar2);
+  $sentencia1 = "SELECT vidautil FROM categoria WHERE idCat='$fila2[idCat]'"; 
+  $ejecutar1=mysqli_query($con,$sentencia1);
+  $fila1 = mysqli_fetch_assoc($ejecutar1);
+  $vidautil=$fila1['vidautil'];
   }else{
-    $vidautil=$_POST['vi'];
+    $vidautil=$_POST['vidautil'];
   }
 
 $insertar="INSERT INTO compras (idProv,fecha,condicion,precioUni,codAct,donado,estado) VALUES ('$_POST[prov]','$tfecha','$_POST[condi]','$_POST[prec]','$_POST[idac]','$dona','$est')";
@@ -222,7 +222,7 @@ echo "</script>";
 
 //inserta Venta
 if (!empty($_POST['idAc']) && !empty($_POST['condiM']) && !empty($_POST['nfac']) && !empty($_POST['fech']) && !empty($_POST['prec']))  {
- $val=2;
+$val=2;
 $aux5=$_POST['idAc'];
 
 $insertar="INSERT INTO venta (idActi,idMovi,factNum,fecha,precVenta) VALUES ('$_POST[idAc]','$_POST[condiM]','$_POST[nfac]','$_POST[fech]','$_POST[prec]')";
@@ -238,10 +238,10 @@ header('Location: http://localhost:8081/cucoaf/vistas/ActivoFijo/factura.blade.p
 //inserta Reevaluacion
 if (!empty($_POST['ideA']) && !empty($_POST['precN']) && !empty($_POST['precA']))  {
 
- $val=$_POST['ideA'];
-   $aux=$_POST['precN'];
-   
-   $sql = " UPDATE detalle_activo set valor_historico='$aux' WHERE activofijo_id='$val'";
+$val=$_POST['ideA'];
+$aux=$_POST['precN'];
+
+$sql = " UPDATE detalle_activo set valor_historico='$aux' WHERE activofijo_id='$val'";
   $resultado = $mysqli->query($sql);
   ini_set('date.timezone', 'America/El_Salvador');
 
@@ -263,7 +263,7 @@ $est7=1;
 $insertar="INSERT INTO usuarios (user, pass, nombre, direccion, telefono, nivel, dui,estado) VALUES ('$_POST[usu]','$_POST[contra]','$_POST[nomb]','$_POST[dir]','$_POST[tel]','$_POST[tipo]','$_POST[dui]','$est7')";
 $ejecutar=mysqli_query($con,$insertar);
 
- 
+
 echo "<script language='javascript'>";
 echo  "
          location.href = 'UsuarioMostrar.blade.php?v=1';

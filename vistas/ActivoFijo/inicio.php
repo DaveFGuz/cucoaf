@@ -31,7 +31,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 <link rel="stylesheet" type="text/css" href="estilos.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
- 
+
 
 <!-- Optional theme -->
 
@@ -110,7 +110,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-   <!-- <img style="margin-left: 300px;" src="../Imagen/Bien.gif" height="100" width="700">-->
+   <img style="margin-left: 150px;" src="../Imagen/noname.png" height="800" width="1000">
     </div>
     </div>
     </div>

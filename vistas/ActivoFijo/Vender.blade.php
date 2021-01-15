@@ -189,7 +189,7 @@ $cont1=0;
 <thead>
 
                         <tr 
-style="background-color: #90327A">
+style="background-color: #36a54c">
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>

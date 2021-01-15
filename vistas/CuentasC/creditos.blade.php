@@ -166,7 +166,7 @@ $resultado = $mysqli->query($sql);
 <br>
  <div class="form-group">
 
-<button type="button" style="background-color: #90327A" class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarCredito"  >Ingresar Credito</button>
+<button type="button" style="background-color: #4c9ea0" class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarCredito"  >Ingresar Credito</button>
   </div>
   </div>
  
@@ -200,7 +200,7 @@ $cont=0;
 
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
-                           <tr style="background-color: #90327A">
+                           <tr style="background-color: #36a54c">
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>
