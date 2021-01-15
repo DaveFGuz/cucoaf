@@ -97,7 +97,8 @@ ini_set('date.timezone', 'America/El_Salvador');
 		<tr>
 			<td></td>
 			<td style="font-size: 80%; text-align:center; vertical-align:middle">REPORTE DE CLIENTES CARTERA MOROSA</td>
-			<td></td>			
+			<div style="text-align: right;"><a  class="btn btn-primary" href="http://localhost/cucoaf/vistas/CuentasC/ImpresionCarteraMorosa.php" target="_blank"">Imprimir</a>
+      </div>		
 		</tr>		
 	</thead>
 </table>
