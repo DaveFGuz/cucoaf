@@ -171,7 +171,7 @@ $resultado = $mysqli->query($sql);
 </select>
 </div>
 </div> 
-                                 
+
  <div class="col-sm-12 col-md-12">
 
   <div class="panel-body">
