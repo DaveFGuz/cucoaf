@@ -45,7 +45,7 @@ $ejecutar=mysqli_query($con,$insertar);
  
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'RegistroProveedor.blade.php?v=1';
+         location.href = 'RegistroProveedor.blade.php';
          ";
 echo "</script>";
 
@@ -61,7 +61,7 @@ $ejecutar=mysqli_query($con,$insertar);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'Movimiento.blade.php?v=1';
+         location.href = 'Movimiento.blade.php';
          ";
 echo "</script>";
 
@@ -74,7 +74,7 @@ $est=1;
 $insertar="INSERT INTO marca (nombre,estado) VALUES ('$_POST[nombProd]','$est')";
 $ejecutar=mysqli_query($con,$insertar);
 echo ' <script type="text/javascript"> alert("Datos Guardados Correctamente"); </script>';
-header('Location: http://localhost:8081/cucoaf/vistas/ActivoFijo/Marcas.blade.php');
+header('Location: http://localhost/cucoaf/vistas/ActivoFijo/Marcas.blade.php');
 
 }
 //inserta clasificacion activo
@@ -85,7 +85,7 @@ $ejecutar=mysqli_query($con,$insertar);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'clasificacionActivo.blade.php?v=1';
+         location.href = 'clasificacionActivo.blade.php';
          ";
 echo "</script>";
 
@@ -102,7 +102,7 @@ $ejecutar=mysqli_query($con,$insertar);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'ubicacion.blade.php?v=1';
+         location.href = 'ubicacion.blade.php';
          ";
 echo "</script>";
 
@@ -117,7 +117,7 @@ $ejecutar=mysqli_query($con,$insertar);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'Categoria.blade.php?v=1';
+         location.href = 'Categoria.blade.php';
          ";
 echo "</script>";
 }
@@ -138,7 +138,7 @@ $ejecutar=mysqli_query($con,$insertar);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'subcategoria.blade.php?v=1';
+         location.href = 'subcategoria.blade.php';
          ";
 echo "</script>";
 }
@@ -164,7 +164,7 @@ $ejecutar=mysqli_query($con,$insertar);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'CompraIngresar.blade.php?v=1';
+         location.href = 'CompraIngresar.blade.php';
          ";
 echo "</script>";
 }
@@ -214,7 +214,7 @@ $ejecutar3=mysqli_query($con,$insertar2);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'Comprar.blade.php?v=1';
+         location.href = 'Comprar.blade.php';
          ";
 echo "</script>";
 
@@ -232,7 +232,7 @@ $ejecutar=mysqli_query($con,$insertar);
 $sql = " UPDATE activo set estado='$val' WHERE idAc='$aux5'";
   $resultado = $mysqli->query($sql);
 
-header('Location: http://localhost:8081/cucoaf/vistas/ActivoFijo/factura.blade.php');
+header('Location: http://localhost/cucoaf/vistas/ActivoFijo/factura.blade.php');
 }
 
 //inserta Reevaluacion
@@ -252,7 +252,7 @@ $ejecutar=mysqli_query($con,$insertar);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'reevaluar.blade.php?v=1';
+         location.href = 'reevaluar.blade.php';
          ";
 echo "</script>";
 }
@@ -266,7 +266,7 @@ $ejecutar=mysqli_query($con,$insertar);
 
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'UsuarioMostrar.blade.php?v=1';
+         location.href = 'UsuarioMostrar.blade.php';
          ";
 echo "</script>";
 

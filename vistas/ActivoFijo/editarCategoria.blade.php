@@ -87,7 +87,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Categoria.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/Categoria.blade.php";
   }
 
 
@@ -106,7 +106,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Editar Categoria</h3>
+    <h2 class="col-lg-offset-6" ><strong>EDITAR CATEGORIA</strong></h2>
     </div>
     </div>
     </div>
@@ -133,33 +133,33 @@ function envia(){
  <form  action="editar.php" method="post" class="form-register" > 
        <div class="input-group">
    
- <div class="col-lg-8 col-md-offset-3">
+ <div class="col-lg-8 col-md-offset-2">
   <label for="nombCat2" >Nombre:</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="nombCat2" name="nombCat2" placeholder="Nombre" value="<?php echo $fila['nombre'];?>">
+  <input type="text" class="form-control" id="nombCat2" name="nombCat2" required placeholder="Nombre" value="<?php echo $fila['nombre'];?>">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 
 </div>
-<div class="col-lg-8 col-md-offset-3">
+<div class="col-lg-8 col-md-offset-2">
   <label for="codCat2" >Codigo:</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="codCat2" name="codCat2" placeholder="A001" value="<?php echo $fila['cod'];?>">
+  <input type="text" class="form-control" id="codCat2" name="codCat2" required placeholder="A001" value="<?php echo $fila['cod'];?>">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 
 </div>
-<div class="col-lg-8 col-md-offset-3">
+<div class="col-lg-8 col-md-offset-2">
   <label for="valr2" >Valor residual(%):</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="valr2" name="valr2" placeholder="Nombre" value="<?php echo $fila['val'];?>">
+  <input type="text" class="form-control" id="valr2" name="valr2" required placeholder="Nombre" value="<?php echo $fila['val'];?>">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 
 </div>
 <input  type="hidden" class="form-control" id="idCat" name="idCat" placeholder="Nombre" value="<?php echo $_POST['btnEditar'];?>">
 
-  <div class="col-lg-12 col-md-offset-5">
+  <div class="col-lg-12 col-md-offset-4">
 <br>
 <br> 
 <div class="button-group">

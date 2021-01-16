@@ -85,7 +85,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
  
  
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/RegistroProveedor.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/RegistroProveedor.blade.php";
   }
 </script>
 <header class="main-header">
@@ -101,7 +101,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Editar Proveedor</h3>
+    <h2 class="col-lg-offset-6" ><strong>EDITAR PROVEEDOR</strong></h2>
     </div>
     </div>
     </div>
@@ -161,7 +161,7 @@ function envia(){
 
 <br>
 
-<div class="input-group">
+<div class="input-group col-lg-12">
 
   <label for="obs">Observaciones </label>
   <div class="input-group">
@@ -217,7 +217,7 @@ function envia(){
 
 <input  type="hidden" class="form-control" id="ideU" name="ideU" placeholder="Nombre" value="<?php echo $_POST['btnEditar'];?>"> 
 
-  <div class="col-lg-12 col-md-offset-5">
+  <div class="col-lg-12 col-md-offset-3">
 <br>
 <br> 
 <div class="button-group">

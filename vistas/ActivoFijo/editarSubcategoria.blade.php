@@ -87,7 +87,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/subcategoria.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/subcategoria.blade.php";
   }
 
 
@@ -105,7 +105,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Editar Subcategoria</h3>
+    <h2 class="col-lg-offset-6" ><strong>EDITAR SUBCATEGORIA</strong></h2>
     </div>
     </div>
     </div>
@@ -132,7 +132,7 @@ function envia(){
  <form  action="editar.php" method="post" class="form-register" > 
        <div class="input-group">
    
- <div class="col-lg-8 col-md-offset-3">
+ <div class="col-lg-8 col-md-offset-4">
   <label for="nombsub2" >Nombre:</label>
   <div class="input-group">
   <input type="text" class="form-control" id="nombsub2" name="nombsub2" placeholder="Nombre" value="<?php echo $fila['nombre'];?>">
@@ -140,7 +140,7 @@ function envia(){
 </div>
 
 </div>
-<div class="col-lg-8 col-md-offset-3">
+<div class="col-lg-8 col-md-offset-4">
    <label for="nomsubcatego" >Elija una categoria:</label>
 <br>
  <select class="form-control" data-live-search="true" id=" nomsubcatego" name="nomsubcatego">
@@ -169,7 +169,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 </select>                 
 
 </div>
-<div class="col-lg-8 col-md-offset-3">
+<div class="col-lg-8 col-md-offset-4">
   <label for="codsub2" >Código:</label>
   <div class="input-group">
   <input type="text" class="form-control" id="codsub2" name="codsub2" placeholder="Ejemplo : 0001" value="<?php echo $fila['codigo'];?>">
@@ -180,7 +180,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 </div>
 <input  type="hidden" class="form-control" id="idsu" name="idsu" placeholder="Nombre" value="<?php echo $_POST['btnEditar'];?>">
 
-  <div class="col-lg-12 col-md-offset-5">
+  <div class="col-lg-12 col-md-offset-4">
 <br>
 <br> 
 <div class="button-group">

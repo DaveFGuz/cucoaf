@@ -149,7 +149,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h2 class="col-lg-offset-6" ><strong>GESTION DE PROVEEDOR</strong></h2>
+    <h2 class="col-lg-offset-2" ><strong>GESTIÓN DE PROVEEDORES</strong></h2>
     </div>
     </div>
     </div>
@@ -164,7 +164,7 @@ $resultado = $mysqli->query($sql);
  <div class="col-md-3">
 <br>
  <div class="form-group">  
-<button type="button"  class="btn btn-primary " data-toggle="modal" data-target="#ModalRegistarProveedor" style="background-color: #4c9ea0" >Registrar Proveedor</button>
+<button type="button"  class="btn btn-primary color-boton  " data-toggle="modal" data-target="#ModalRegistarProveedor" style="background-color: #4c9ea0" >Registrar Proveedor</button>
 </div>
 </div>
 

@@ -318,7 +318,7 @@ var aux=0;
 <br>
 <br> 
 <div class="button-group">
-<button type="submit" class="btn btn-primary" style="background-color: #2D943E">Guardar</button>
+<button type="submit" class="btn btn-primary " style="background-color: #2D943E">Guardar</button>
 <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="envia()" style="background-color: #A42727">Cancelar</button>
 </div>
 </div>

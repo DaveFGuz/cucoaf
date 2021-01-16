@@ -15,7 +15,7 @@ $sql = " UPDATE ubicacion set nombre='$nombeditUb',codU='$codi' WHERE idUb='$ide
 
 	echo "<script language='javascript'>";
 echo  "
-         location.href = 'Ubicacion.blade.php?v=2';
+         location.href = 'Ubicacion.blade.php';
          ";
 echo "</script>";
 
@@ -36,7 +36,7 @@ $resultado = $mysqli->query($sql);
 
 	echo "<script language='javascript'>";
 echo  "
-         location.href = 'RegistroProveedor.blade.php?v=2';
+         location.href = 'RegistroProveedor.blade.php';
          ";
 echo "</script>";
 
@@ -58,7 +58,7 @@ $sql = " UPDATE marca set nombre='$nombeditUb' WHERE idMarca='$ideU'";
 
 		echo "<script language='javascript'>";
 echo  "
-         location.href = 'Marcas.blade.php?v=2';
+         location.href = 'Marcas.blade.php';
          ";
 echo "</script>";
 
@@ -79,7 +79,7 @@ $sql = " UPDATE movimiento set nombre='$nombMo' WHERE idMov='$ideU'";
 
 	echo "<script language='javascript'>";
 echo  "
-         location.href = 'Movimiento.blade.php?v=2';
+         location.href = 'Movimiento.blade.php';
          ";
 echo "</script>";
 
@@ -100,7 +100,7 @@ echo ' <script type="text/javascript"> alert("Datos Guardados Correctamente"); <
 
 	echo "<script language='javascript'>";
 echo  "
-         location.href = 'clasificacionActivo.blade.php?v=2';
+         location.href = 'clasificacionActivo.blade.php';
          ";
 echo "</script>";
 
@@ -121,7 +121,7 @@ $sql = " UPDATE categoria set nombre='$nombe',cod='$cod',val='$val' WHERE idCat=
 
 	echo "<script language='javascript'>";
 echo  "
-         location.href = 'Categoria.blade.php?v=2';
+         location.href = 'Categoria.blade.php';
          ";
 echo "</script>";
 
@@ -144,7 +144,7 @@ $sql = " UPDATE subcategoria set nombre='$nombe',idcat='$ide',codigo='$cod' WHER
 
 	echo "<script language='javascript'>";
 echo  "
-         location.href = 'subcategoria.blade.php?v=2';
+         location.href = 'subcategoria.blade.php';
          ";
 echo "</script>";
 
@@ -168,7 +168,7 @@ $sql = " UPDATE institucion set codigo='$nomCo',Nombre='$nombI' WHERE idIn='$aux
 
 	echo "<script language='javascript'>";
 echo  "
-         location.href = 'IngresaInstitucion.blade.php?v=2';
+         location.href = 'IngresaInstitucion.blade.php';
          ";
 echo "</script>";
 
@@ -218,7 +218,7 @@ $sql = " UPDATE usuarios set user='$us',pass='$ps',nombre='$nomb1',direccion='$d
  
 echo "<script language='javascript'>";
 echo  "
-         location.href = 'UsuarioMostrar.blade.php?v=2';
+         location.href = 'UsuarioMostrar.blade.php';
          ";
 echo "</script>";
 

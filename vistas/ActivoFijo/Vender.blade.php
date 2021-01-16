@@ -188,8 +188,13 @@ $cont1=0;
 <table class="table table-list-search table-bordered table-hover"  id="tabla1">
 <thead>
 
+<<<<<<< HEAD
+                        <tr class="color-apariencia" 
+>
+=======
                         <tr 
 style="background-color: #36a54c">
+>>>>>>> 2351c426c9c4d68a1991058725a15994445408a8
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>

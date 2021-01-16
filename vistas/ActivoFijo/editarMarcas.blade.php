@@ -89,7 +89,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Marcas.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/Marcas.blade.php";
   }
 
 
@@ -107,8 +107,8 @@ function envia(){
     <div class="container">
     <div class="col-md-12">
     <div class="row">
-    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Editar Marcas</h3>
+    <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12 page-header">
+    <h2 class="col-lg-offset-6" ><strong>EDITAR MARCAS</strong></h2>
     </div>
     </div>
     </div>
@@ -120,7 +120,7 @@ function envia(){
 
 
 
-  <div class="col-md-9 col-md-offset-4">
+  <div class="col-md-10 col-md-offset-4" >
   
 <?php 
    $aux=$_POST['btnEditar'];
@@ -136,10 +136,10 @@ function envia(){
  <form  action="editar.php" method="post" class="form-register" > 
        <div class="input-group">
    
- <div class="col-lg-8 col-md-offset-3">
+ <div class="col-lg-10 col-md-offset-4">
   <label for="nombMar" >Nombre:</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="nombMar" name="nombMar" placeholder="Nombre" value="<?php echo $fila['nombre'];?>">
+  <input type="text" class="form-control" id="nombMar" name="nombMar" required placeholder="Nombre" value="<?php echo $fila['nombre'];?>">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 
@@ -147,12 +147,12 @@ function envia(){
 
 <input  type="hidden" class="form-control" id="ideU" name="ideU" placeholder="Nombre" value="<?php echo $_POST['btnEditar'];?>">
 
-  <div class="col-lg-12 col-md-offset-5">
+  <div class="col-lg-12 col-md-offset-6">
 <br>
 <br> 
 <div class="button-group">
-<button type="submit" class="btn-primary" style="background-color: #2D943E">Guardar</button>
-<button type="button"  class="btn-primary" style="background-color: #A42727" data-dismiss="modal" onclick="envia()">Cancelar</button>
+<button type="submit" class="btn btn-primary" style="background-color: #2D943E">Guardar</button>
+<button type="button"  class="btn btn-danger" style="background-color: #A42727" data-dismiss="modal" onclick="envia()">Cancelar</button>
 </div>
 </div>
 

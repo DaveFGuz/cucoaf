@@ -148,7 +148,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h2 class="col-lg-offset-6" ><strong>GESTION DE MOVIMIENTO</strong></h2>
+    <h2 class="col-lg-offset-2" ><strong>GESTIÓN DE MOVIMIENTOS</strong></h2>
     </div>
     </div>
     </div>
@@ -162,7 +162,7 @@ $resultado = $mysqli->query($sql);
   <div class="col-md-9 col-md-offset-3" style=" margin-left: 58px;">
   
 
-<div class="col-md-3 col-md-offset-5 ">
+<div class="col-md-3 col-md-offset-4 ">
 <div class="form-group">
 
   <label for="condi"></label>

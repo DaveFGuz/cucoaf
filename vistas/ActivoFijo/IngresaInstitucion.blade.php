@@ -91,7 +91,7 @@ $('#nombCo').val(" ");
 }
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/IngresaInstitucion.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/IngresaInstitucion.blade.php";
   }
 
 
@@ -140,7 +140,7 @@ function envia(){
  <div class="col-lg-8 col-md-offset-3">
   <label for="nombI" >Nombre:</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="nombI" name="nombI" placeholder="Nombre de Institución" value="<?php echo $fila['Nombre'];?>">
+  <input type="text" class="form-control" id="nombI" name="nombI" required placeholder="Nombre de Institución" value="<?php echo $fila['Nombre'];?>">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 
@@ -148,7 +148,7 @@ function envia(){
  <div class="col-lg-8 col-md-offset-3">
   <label for="nombCo" >Código Correlativo:</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="nombCo" name="nombCo" placeholder="Ej:1125" value="<?php echo $fila['codigo'];?>">
+  <input type="text" class="form-control" id="nombCo" name="nombCo" required placeholder="Ej:1125" value="<?php echo $fila['codigo'];?>">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 

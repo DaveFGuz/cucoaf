@@ -97,7 +97,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
   function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/CuentasC/creditos.blade.php";
+     window.location="http://localhost/cucoaf/vistas/CuentasC/creditos.blade.php";
   }
 
 }
@@ -148,7 +148,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Gestionar Créditos</h3>
+    <h2 class="col-lg-offset-2" ><strong>GESTIÓN CREDITOS</strong></h2>
     </div>
     </div>
     </div>
@@ -166,7 +166,9 @@ $resultado = $mysqli->query($sql);
 <br>
  <div class="form-group">
 
+
 <button type="button" style="background-color: #4c9ea0" class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistarCredito"  >Ingresar Credito</button>
+
   </div>
   </div>
  
@@ -200,7 +202,10 @@ $cont=0;
 
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
-                           <tr style="background-color: #36a54c">
+
+                           <tr class="color-apariencia">
+                          
+
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>
@@ -209,7 +214,7 @@ $cont=0;
     <th scope="col" style="color:#FFFFFF">Máximo a Prestar</th>
     <th scope="col" style="color:#FFFFFF">Interes Anual</th>
     <th scope="col" style="color:#FFFFFF">Plazo Máximo</th>
-    <th scope="col" style="color:#FFFFFF" WIDTH="150" HEIGHT='9'>Opciones</th>
+    <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9'>Opciones</th>
   </tr>
   </thead>
   <tbody class="contenidobusqueda">
@@ -260,7 +265,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 <!--Modal  Registrar Proveedor-->
 
 <div id="ModalRegistarCredito" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-md">
 
     <!-- Modal content-->
 <form  action="insert.php" method="post" class="form-register" > 
@@ -284,7 +289,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
 
 <div class="col-md-9 col-md-offset-1">
 
-<div class="col-md-6 ">
+<div class="col-md-12 ">
 <div class="form-group">
 
   <label for="nombcre" >Nombre de Credito:</label>
@@ -313,7 +318,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
   </div>
 </div>
 </div>
-<div class="col-md-6">
+<div class="col-md-12">
 
 <div class="form-group">
 
@@ -351,7 +356,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
  <div class="modal-footer">
 
         <button type="submit" class="btn btn-primary" >Guardar</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
       </form>

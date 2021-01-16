@@ -149,7 +149,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 ?>
 
-<body class="hold-transition skin-green-light sidebar-mini">
+<body id="bo" class="hold-transition skin-green-light sidebar-mini">
   <div class="">
  
     <div class="container">
@@ -171,7 +171,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 
-  <div class="col-md-10 col-md-offset-2">
+  <div class="col-md-10 col-md-offset-1">
   
 <div class="col-md-3">
 <br>
@@ -180,6 +180,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
   </div>
   </div>
+  <script> 
+document.getElementById("bo").className = "skin-green-light sidebar-mini sidebar-collapse";</script>
  
                                  
  <div class="col-sm-12 col-md-12">

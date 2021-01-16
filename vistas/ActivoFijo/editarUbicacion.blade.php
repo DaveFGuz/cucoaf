@@ -89,7 +89,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Ubicacion.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/Ubicacion.blade.php";
   }
 
 
@@ -108,7 +108,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Editar Ubicación</h3>
+    <h2 class="col-lg-offset-5" ><strong>EDITAR UBICACIONES</strong></h2>
     </div>
     </div>
     </div>

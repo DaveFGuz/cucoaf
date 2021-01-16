@@ -146,7 +146,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h2 class="col-lg-offset-5" ><strong>GESTIONAR SUB-CATEGORIA</strong></h2>
+    <h2 class="col-lg-offset-2" ><strong>GESTIÓN DE SUBCATEGORIA</strong></h2>
     </div>
     </div>
     </div>
@@ -158,7 +158,7 @@ $resultado = $mysqli->query($sql);
 
 
 
-  <div class="col-md-9 col-md-offset-3" style=" margin-left: 58px;">
+  <div class="col-md-9 col-md-offset-3" style=" margin-left: 90px;">
   
 <div class="col-md-3">
 <br>

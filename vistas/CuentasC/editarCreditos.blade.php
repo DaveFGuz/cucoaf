@@ -87,7 +87,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/CuentasC/creditos.blade.php";
+   window.location="http://localhost/cucoaf/vistas/CuentasC/creditos.blade.php";
   }
 
 
@@ -106,7 +106,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Administrar Creditos</h3>
+    <h2 class="col-lg-offset-5" ><strong>ADMINISTRAR CREDITOS</strong></h2>
     </div>
     </div>
     </div>

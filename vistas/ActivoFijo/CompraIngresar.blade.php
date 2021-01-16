@@ -109,7 +109,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <    <h2 class="col-lg-offset-6" ><strong>DATOS DE COMPRA</strong></h2>
+    <    <h2 class="col-lg-offset-2" ><strong>DETALLES DE COMPRA</strong></h2>
     </div>
     </div>
     </div>
@@ -128,8 +128,8 @@ function envia(){
  ?>
 
 	<div class="row">
-<h2  class="col-lg-offset-5" ><?php echo "Nombre de activo:____".$fila['descrip'] ?></h2>
-<h2  class="col-lg-offset-5" ><?php echo "Codigo:_____".$fila['codAct'] ?></h2>
+<h3  class="col-lg-offset-4" ><?php echo "Nombre de activo:____".$fila['descrip'] ?></h3>
+<h3  class="col-lg-offset-4" ><?php echo "Codigo:_____".$fila['codAct'] ?></h3>
  <div class="col-md-2"></div>
 
 

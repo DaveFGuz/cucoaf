@@ -132,7 +132,7 @@ function envia(){
   <?php include('../ActivoFijo/menu.php'); ?> 
 
 </head>
-<body class="hold-transition skin-green-light sidebar-mini">
+<body id="bo" class="hold-transition skin-green-light sidebar-mini">
   <div class="wrapper">
 
 <?php
@@ -161,7 +161,7 @@ $resultado = $mysqli->query($sql);
  <div class="col-md-2"></div>
 
 
-  <div class="col-md-10 col-md-offset-2">
+  <div class="col-md-10 col-md-offset-1">
 
 
                                  
@@ -190,6 +190,8 @@ $resultado = $mysqli->query($sql);
 $cont=0;
 ?>
 <div class="row thumbnail">
+<script> 
+document.getElementById("bo").className = "skin-green-light sidebar-mini sidebar-collapse";</script>
 
 
 <table class="table table-list-search table-bordered table-hover" id="tabla1">

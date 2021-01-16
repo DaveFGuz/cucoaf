@@ -115,7 +115,7 @@ function envia1(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h2 align="center" >Depreciación</h2>
+    <h2 class="col-lg-offset-2" ><strong>CALCULO DE DEPRECIACION</strong></h2>
     </div>
     </div>
     </div>
@@ -142,8 +142,10 @@ function envia1(){
 	<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 		<div class="x_panel">
 			<div class="x_title">
-				<h3 align="center">Precio: <?php echo $fila1['valor_historico']?>&nbsp;&nbsp; Valor Residual:<?php echo $residual?>&nbsp;&nbsp; Valor a Depreciar:<?php echo $dep?></h3 align="center">
-				<div class="clearfix"></div>
+				
+				<h4 class="col-lg-offset-1" ><div style="color:green"><strong>Precio: <?php echo $fila1['valor_historico']?></div>&nbsp;&nbsp; <div style="color:red">Valor Residual:<?php echo $residual?></div>&nbsp;&nbsp; <div style="color:black"> Valor a Depreciar:<?php echo $dep?></strong></h4>
+        <br>
+        <div class="clearfix"></div>
 			</div>
 			<div class="col-md-8 col-md-offset-3 col-sm-12 col-xs-12">
 				<?php for ($i=0; $i <2 ; $i++) { 				
@@ -155,7 +157,7 @@ function envia1(){
 
 				<button type="button" onclick="fecha()" class="btn btn-danger" style="background-color: #2D943E">CALCULAR</button> <button type="button" onclick="calcular('1','0','0')" class="btn btn-info">AÑO</button> <button type="button" onclick="calcular('2','0','0')" class="btn btn-info">MES</button> <button type="button" onclick="calcular('3','0','0')" class="btn btn-info">DIAS</button>
 
-				<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="col-md-6 col-sm-6 col-xs-12">
 
            
 <input type="hidden" value="<?php echo $dep?>" id="valor" name="valor">
@@ -172,12 +174,12 @@ function envia1(){
 				
 			</div>
 			<div class="row">
-			<div class="col-md-offset-2 col-md-8">
+			<div class="col-md-offset-2 col-md-12">
 			<div class="x_content">	<br />
 
-				<div class="w3-container table-responsive">
+				<div class="w3-container table-responsive" style=" overflow:auto;height:500px" >
 
-					<table id="tabla" class="table table-list-search table-bordered table-hover">
+					<table id="tabla" class="table table-list-search table-bordered table-hover" >
 						<thead>
 							<tr class="w3-text-black ">
 								<th data-column-id="id" data-type="numeric" data-order="asc">Año/Mes/Dia</th>
@@ -187,7 +189,7 @@ function envia1(){
 
 							</tr>
 						</thead>
-						<tbody>
+						<tbody >
 
 						</tbody>
 					</table>	

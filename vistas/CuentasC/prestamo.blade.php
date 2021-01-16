@@ -88,7 +88,7 @@ $Hoy=date("Y/m/d");
  
  
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/CuentasC/RegistroCliente.blade.php";
+   window.location="http://localhost/cucoaf/vistas/CuentasC/RegistroCliente.blade.php";
   }
 </script>
 <header class="main-header">
@@ -104,7 +104,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Realizar Prestamo</h3>
+    <h2 class="col-lg-offset-4" ><strong>REALIZAR PRESTAMOS</strong></h2>
     </div>
     </div>
     </div>

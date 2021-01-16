@@ -88,7 +88,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
  
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Movimiento.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/Movimiento.blade.php";
   }
 
 </script>
@@ -106,7 +106,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Editar Movimiento</h3>
+    <h2 class="col-lg-offset-6" ><strong>EDITAR MOVIMIENTO</strong></h2>
     </div>
     </div>
     </div>
@@ -118,7 +118,7 @@ function envia(){
 
 
 
-  <div class="col-md-9 col-md-offset-3">
+  <div class="col-md-9 col-md-offset-4">
   
 <?php 
    $aux=$_POST['btnEditar'];
@@ -134,10 +134,10 @@ function envia(){
  <form  action="editar.php" method="post" class="form-register" > 
        <div class="input-group">
    
- <div class="col-lg-8 col-md-offset-3">
+ <div class="col-lg-12 col-md-offset-3">
   <label for="nombMo" >Nombre:</label>
   <div class="input-group">
-  <input type="text" class="form-control" id="nombMo" name="nombMo" placeholder="Nombre" value="<?php echo $fila['nombre'];?>">
+  <input type="text" class="form-control" id="nombMo" name="nombMo" placeholder="Nombre" required value="<?php echo $fila['nombre'];?>">
   <div class="input-group-addon"><span  class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
 </div>
 
@@ -145,7 +145,7 @@ function envia(){
 
 <input  type="hidden" class="form-control" id="ideU" name="ideU" placeholder="Nombre" value="<?php echo $_POST['btnEditar'];?>">
 
-  <div class="col-lg-12 col-md-offset-5">
+  <div class="col-lg-12 col-md-offset-6">
 <br>
 <br> 
 <div class="button-group">

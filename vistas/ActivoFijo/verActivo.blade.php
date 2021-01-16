@@ -120,7 +120,7 @@ function envia1(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Detalles de Activo Fijo</h3>
+    <h2 class="col-lg-offset-5" ><strong>DETALLES DE ACTIVO FIJO</strong></h2>
     </div>
     </div>
     </div>
@@ -131,7 +131,7 @@ function envia1(){
  <div class="col-md-2"></div>
 
 
-  <div class="col-md-7 col-md-offset-1">
+  <div class="col-md-8 col-md-offset-1">
 
 
                                  
@@ -147,7 +147,7 @@ function envia1(){
 <table class="table table-list-search table-bordered table-hover">
 <thead>
 
-                       <tr style="background-color: #90327A">
+                       <tr class="color-apariencia">
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="100" HEIGHT='9' >Valor</th>
@@ -254,7 +254,7 @@ function envia1(){
 
 </div>
 </div>
-<div class="col-lg-6 col-md-offset-5">
+<div class="col-lg-6 col-md-offset-6">
 <div class="button-group">
 <form  action="depreciar.blade.php" method="get" class="form-register" > 
 <button type="submit"  class="btn btn-primary" id="boton" style="background-color: #2D943E" name="boton" onclick="envia1()" value=<?php echo $aux2?>>Ver Depreciacion</button>

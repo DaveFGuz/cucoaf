@@ -153,7 +153,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h2 class="col-lg-offset-6" ><strong>GESTIONAR UBICACION</strong></h2>
+    <h2 class="col-lg-offset-2" ><strong>GESTIÓN DE UBICACIONES</strong></h2>
     </div>
     </div>
     </div>
@@ -164,7 +164,7 @@ $resultado = $mysqli->query($sql);
  <div class="col-md-2"></div>
 
 
-  <div class="col-md-9 col-md-offset-5" style=" margin-left: 58px;">
+  <div class="col-md-9 col-md-offset-5" style=" margin-left: 90px;">
   <div class="col-md-3">
 <br>
  <div class="form-group">
@@ -284,7 +284,7 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
     <div class="color-moduloInventario">
       <div class="modal-header" >
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <div class="col-md-offset-5">
+        <div class="col-md-offset-4">
         <h4 class="modal-title">Nueva Ubicación</h4>
         </div>
       </div>

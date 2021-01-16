@@ -239,7 +239,7 @@ function envia(){
 
 <div class="button-group">
 
-<button type="button" style="width:100px; background-color: #A42727"  class="btn btn-primary" data-dismiss="modal" onclick="envia()">Atras</button>
+<button type="button" style="width:150px; background-color: #A42727"  class="btn btn-primary" data-dismiss="modal" onclick="envia()">Atras</button>
 </div>
 </div>
 

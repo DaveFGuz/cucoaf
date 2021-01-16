@@ -144,17 +144,21 @@ function envia(){
  <form  action="insert.php" method="post" class="form-register" > 
        <div class="input-group">
    
- <div class="col-lg-12 col-md-offset-2">
+ <div class="col-lg-12 col-md-offset-3">
  
 
 
 <div class="col-md-6">
+
 <div class="form-group">
+<label for="nit" id="ni">Clasificacion: </label>
   <select class="form-control" name="persona" id="persona" onchange="per(this.value)">
   <option value="0">Persona Natural</option>
   <option value="1">Persona Juridica</option>
 </select>
 </div>
+<br>
+<br>
 <div class="input-group">
 
   <label for="nomb" id="noC" >Nombre de Cliente:</label>
@@ -230,6 +234,7 @@ function envia(){
 </div>
 </div>
 <div class="input-group" id="a1" style="width:220px;">
+<br>
 
   <label for="ape" >Apellidos:</label>
   <div class="input-group">
@@ -282,7 +287,7 @@ function envia(){
 </div>
 
 </div>
-  <div class="col-lg-12 col-md-offset-5">
+  <div class="col-lg-12 ">
 <br>
 <br> 
 <div class="button-group">

@@ -149,7 +149,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h2 class="col-lg-offset-6" ><strong>GESTIONAR CATEGORIA</strong></h2>
+    <h2 class="col-lg-offset-2" ><strong>GESTIÓN DE CATEGORÍAS</strong></h2>
     </div>
     </div>
     </div>
@@ -161,7 +161,7 @@ $resultado = $mysqli->query($sql);
 
 
 
-  <div class="col-md-9 col-md-offset-3" style=" margin-left: 58px;">
+  <div class="col-md-9 col-md-offset-3" style=" margin-left: 320px;">
   
 <div class="col-md-3">
 <br>
@@ -177,7 +177,7 @@ $resultado = $mysqli->query($sql);
   <label for="condi"></label>
  <select class="form-control" data-live-search="true" id="condi" name="condi" onchange="sele()">
 <option disabled>Seleccionar</option> 
-<option value="1" selected  >CATEGORIAS ACTIVAS</option>
+<option value="1" selected  >CATEGORÍAS ACTIVAS</option>
  
 <option value="0">CATEGORIAS INACTIVAS</option>
 </select>

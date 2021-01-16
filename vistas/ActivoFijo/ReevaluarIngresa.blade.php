@@ -107,7 +107,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Reevaluar</h3>
+    <h2 class="col-lg-offset-6" ><strong>REVALUACION</strong></h2>
     </div>
     </div>
     </div>
@@ -133,7 +133,7 @@ function envia(){
 
  <form  action="insert.php" method="post" class="form-register" > 
        <div class="input-group">
-  <div class="col-lg-8 col-md-offset-3">
+  <div class="col-lg-8 col-md-offset-6">
   <label for="precA" >Precio actual:</label>
   <div class="input-group">
   <input readonly="readonly" type="number" class="form-control" id="precA" name="precA" placeholder="Nombre" value="<?php echo $fila['valor_historico'];?>">
@@ -141,7 +141,7 @@ function envia(){
 </div>
 
 </div> 
- <div class="col-lg-8 col-md-offset-3">
+ <div class="col-lg-8 col-md-offset-6">
   <label for="precN" >Nuevo precio:</label>
   <div class="input-group">
   <input type="number" class="form-control" id="precN" name="precN" placeholder="Precio nuevo" >
@@ -152,10 +152,10 @@ function envia(){
 
 <input  type="hidden" class="form-control" id="ideA" name="ideA" placeholder="Nombre" value="<?php echo $_POST['btnenvia'];?>">
 
-  <div class="col-lg-12 col-md-offset-5">
+  <div class="col-lg-12 col-md-offset-6">
 <br>
 <br> 
-<div class="button-group">
+<div class="button-group col-md-offset-2">
 <button type="submit" class="btn btn-primary" style="background-color: #2D943E">Guardar</button>
 <button type="button"  class="btn btn-primary" data-dismiss="modal" onclick="envia()" style="background-color: #A42727">Cancelar</button>
 </div>

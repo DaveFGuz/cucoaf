@@ -15,7 +15,7 @@ $ide = $_POST['idCre'];
 $sql = " UPDATE creditos set tipo='$nombe',plazom='$plazo',cmax='$maxp',cmin='$mini',garantia='$ga',interes='$inte' WHERE idCre='$ide'";
 	$resultado = $mysqli->query($sql);
 echo ' <script type="text/javascript"> alert("Datos Guardados Correctamente"); </script>';
-header('Location: http://localhost:8081/cucoaf/vistas/CuentasC/creditos.blade.php');
+header('Location: http://localhost/cucoaf/vistas/CuentasC/creditos.blade.php');
 
 }
 
@@ -35,7 +35,7 @@ $direc=$_POST['dir'];
 $sql ="UPDATE cliente set nombre='$nombre',apellido='$ape',dui='$dui',nit='$nit',repre='$repre',tel='$tel',ocupacion='$oc',depa='$dep',direc='$direc' WHERE idCliente='$ideC'";
 $resultado = $mysqli->query($sql);
 
-header('Location: http://localhost:8081/cucoaf/vistas/CuentasC/RegistroCliente.blade.php');
+header('Location: http://localhost/cucoaf/vistas/CuentasC/RegistroCliente.blade.php');
 
 }
 

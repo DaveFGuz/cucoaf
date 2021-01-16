@@ -131,7 +131,7 @@ function envia(){
  <div class="col-md-2"></div>
 
 
-  <div class="col-md-7 col-md-offset-1">
+  <div class="col-md-8 col-md-offset-1">
 
 
                                  
@@ -147,7 +147,7 @@ function envia(){
 <table class="table table-list-search table-bordered table-hover">
 <thead>
 
-                       <tr style="background-color: #90327A">
+                       <tr class="color-apariencia">
 
     <th scope="col" style="color:#FFFFFF" WIDTH="100" HEIGHT='9' >Valor</th>
     <th scope="col" style="color:#FFFFFF" WIDTH="300" HEIGHT='9'>Descripcion</th>
