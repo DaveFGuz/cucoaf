@@ -165,7 +165,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Clientes Incobrables</h3>
+    <h2 class="col-lg-offset-0" ><strong>CLIENTE INCOBRABLES</strong></h2>
     </div>
     </div>
     </div>
@@ -244,7 +244,7 @@ $cont=0;
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
 
-                            <tr class="color-apariencia" >
+                            <tr style="background-color:#36a54c" >
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>

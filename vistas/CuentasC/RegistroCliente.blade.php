@@ -161,7 +161,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Clientes Normales</h3>
+    <h2 class="col-lg-offset-0" ><strong>CLIENTE NORMALES</strong></h2>
     </div>
     </div>
     </div>
@@ -182,7 +182,7 @@ document.getElementById("bo").className = "skin-green-light sidebar-mini sidebar
  <div class="col-md-3">
 <br>
  <div class="form-group">  
-<button type="button"  class="btn btn-primary color-botON " onclick="envia()">Registrar Nuevo Cliente</button>
+<button type="button"  class="btn btn-primary  color-boton" onclick="envia()">Registrar Nuevo Cliente</button>
 </div>
 </div>
 
@@ -213,7 +213,7 @@ document.getElementById("bo").className = "skin-green-light sidebar-mini sidebar
 </div>
 </div> 
                                  
- <div class="col-sm-12 col-md-12">
+ <div class="col-sm-12 col-md-12" style="width: 106%;">
   
   <div class="panel-body">
 
@@ -243,7 +243,7 @@ $cont=0;
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
 
-  <tr class="color-apariencia">
+  <tr style="background-color:#36a54c">
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>
     <th scope="col" style="color:#FFFFFF">Nombre</th>
     <th scope="col" style="color:#FFFFFF">NIT</th>

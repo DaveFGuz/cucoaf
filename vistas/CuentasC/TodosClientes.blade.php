@@ -164,7 +164,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Todos los Clientes </h3>
+    <h2 class="col-lg-offset-0" ><strong>TODOS LOS CLIENTES</strong></h2>
     </div>
     </div>
     </div>
@@ -212,7 +212,7 @@ $resultado = $mysqli->query($sql);
 </div>
 </div> 
                                  
- <div class="col-sm-12 col-md-12">
+ <div class="col-sm-12 col-md-12 " style="width:105%">
   
   <div class="panel-body">
 

@@ -103,7 +103,7 @@ function envia(){
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Editar Cliente</h3>
+    <h2 class="col-lg-offset-4" ><strong>EDITAR CLIENTE</strong></h2>
     </div>
     </div>
     </div>

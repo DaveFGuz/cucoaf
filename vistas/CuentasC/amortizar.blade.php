@@ -174,7 +174,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
   <div class="col-md-10 col-md-offset-1">
   
 <div class="col-md-3">
-<br>
+
  <div class="form-group">
 
 
@@ -184,9 +184,9 @@ $con=mysqli_connect('localhost','root','','finanzas');
 document.getElementById("bo").className = "skin-green-light sidebar-mini sidebar-collapse";</script>
  
                                  
- <div class="col-sm-12 col-md-12">
+ <div class="col-sm-12 col-md-12" style="width:105%">
 
-  <div class="panel-body">
+  <div class="panel-body"   >
 
   <form action="#" method="get" class="form-horizontal">
           
@@ -208,13 +208,13 @@ document.getElementById("bo").className = "skin-green-light sidebar-mini sidebar
 
 $cont=0;
 ?>
-<div class="row thumbnail">
+<div class="row thumbnail" >
 
 
-<table class="table table-list-search table-bordered table-hover" id="tabla1">
+<table class="table table-list-search table-bordered table-hover" id="tabla1" >
 <thead>
 
-                         <tr class="color-apariencia">
+                         <tr  style="background-color: #36a54c" >
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >Pago</th>

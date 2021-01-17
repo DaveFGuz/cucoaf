@@ -95,8 +95,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
 function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/CuentasC/TodosClientes.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/CuentasC/RegistroClienteInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/CuentasC/TodosClientes.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/CuentasC/RegistroClienteInactivo.blade.php";}
 
 }
  //funcion para que la tabla se llene dinamicamente
@@ -129,7 +129,7 @@ function sele(){
 
   <?php include('../ActivoFijo/menu.php'); ?> 
 </head>
-<body class="hold-transition skin-green-light sidebar-mini">
+<body  id="bo" class="hold-transition skin-green-light sidebar-mini">
   <div class="wrapper">
 
 <?php 
@@ -148,7 +148,7 @@ $resultado = $mysqli->query($sql);
     <div class="col-md-12">
     <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-12 page-header">
-    <h3 align="center" >Clientes inactivos</h3>
+    <h2 class="col-lg-offset-0" ><strong>CLIENTE iNACTIVOS</strong></h2>
     </div>
     </div>
     </div>
@@ -159,7 +159,7 @@ $resultado = $mysqli->query($sql);
  <div class="col-md-2"></div>
 
 
-  <div class="col-md-10 col-md-offset-2">
+  <div class="col-md-10 col-md-offset-1">
   
 
 <div class="col-md-2 ">
@@ -176,7 +176,7 @@ $resultado = $mysqli->query($sql);
 </div> 
 
                                  
- <div class="col-sm-12 col-md-12">
+ <div class="col-sm-12 col-md-12" style="width:105%">
 
   <div class="panel-body">
 
@@ -201,12 +201,14 @@ $resultado = $mysqli->query($sql);
 $cont=0;
 ?>
 <div class="row thumbnail">
+<script> 
+document.getElementById("bo").className = "skin-green-light sidebar-mini sidebar-collapse";</script>
 
 <table class="table table-list-search table-bordered table-hover" id="tabla1">
 <thead>
 
                           <tr 
-style="background-color: #90327A" >
+                          style="background-color:#36a54c" >
 
 
     <th scope="col" style="color:#FFFFFF" WIDTH="50" HEIGHT='9' >N°</th>
