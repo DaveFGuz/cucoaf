@@ -44,7 +44,7 @@ if (!$base) {
   $insertar="INSERT INTO pagos (saldo,tipo,numero,fechapago,atraso,mora,total,idPres,cuota) VALUES ('$saldo','$tipo','$numero','$_POST[fe]','$atraso','$mora','$total','$idPre','$cuota')";
   $ejecutar=mysqli_query($con,$insertar);
 echo ' <script type="text/javascript"> alert("Datos Guardados Correctamente"); </script>';
-header('Location: http://localhost:8081/cucoaf/vistas/CuentasC/RegistroCliente.blade.php');
+header('Location: http://localhost/cucoaf/vistas/CuentasC/RegistroCliente.blade.php');
 }else{
 print '<script language="JavaScript">'; 
 print 'alert("Datos incorrectos");'; 

@@ -87,7 +87,7 @@ ini_set('date.timezone', 'America/El_Salvador');
  
  
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/RegistroProveedor.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/RegistroProveedor.blade.php";
   }
 </script>
 <header class="main-header">

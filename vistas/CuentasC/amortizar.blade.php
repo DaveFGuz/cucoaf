@@ -96,7 +96,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
   function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/CuentasC/creditos.blade.php";
+     window.location="http://localhost/cucoaf/vistas/CuentasC/creditos.blade.php";
   }
 
 }
@@ -135,7 +135,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
 //activa el activo 
    $aux=$_GET['btnbaja'];
    $aux7=$_GET['btnbaja'];
-   $sentencia = "SELECT * FROM prestamo WHERE idCli='$aux'"; 
+   $prestamo=$_GET['prestamo'];
+   $sentencia = "SELECT * FROM prestamo WHERE idPres='$prestamo'"; 
    $ejecutar=mysqli_query($con,$sentencia);
    $fila = mysqli_fetch_assoc($ejecutar); 
 

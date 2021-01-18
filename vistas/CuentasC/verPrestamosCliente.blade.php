@@ -93,13 +93,13 @@ $con=mysqli_connect('localhost','root','','finanzas');
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 <script language="javascript">
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/CuentasC/DatosCliente.blade.php";
+   window.location="http://localhost/cucoaf/vistas/CuentasC/DatosCliente.blade.php";
   }
  function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/CuentasC/RegistroCliente.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/CuentasC/RegistroClienteInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/CuentasC/RegistroCliente.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/CuentasC/RegistroClienteInactivo.blade.php";}
 
 }
  //funcion para que la tabla se llene dinamicamente
@@ -245,8 +245,11 @@ while($ejecuta=mysqli_fetch_array($ejecutar))
      <button  type="submit" class="btn btn-danger" id="btndetalle" title="Ver Prestamo" name="btndetalle" style="background-color: transparent border:0" data-toggle="modal"  value=<?php echo $ejecuta['idPres'] ?>>Ver</button>
      </form>
       <form  style=" margin-left: 70px; margin-top:-33px;" action="amortizar.blade.php" method="get" class="form-register" > 
-    <button  type="submit" class="btn btn-warning" title="Ver Amortizacion de prestamo" id="btnbaja" name="btnbaja" style="background-color: transparent border:0" data-toggle="modal"  value=<?php echo $ejecuta['idCli'] ?>>Amortización</button>
-     </form>
+      <input type="hidden" class="form-control" name="prestamo" id="prestamo" value=<?php echo $ejecuta['idPres']?>>
+       
+       <button  type="submit" class="btn btn-warning" title="Ver Amortizacion de prestamo" id="btnbaja" name="btnbaja" style="background-color: transparent border:0" data-toggle="modal"  value=<?php echo $ejecuta['idCli']?>>Amortización</button>
+    
+    </form>
      
     </td>
   </tr>

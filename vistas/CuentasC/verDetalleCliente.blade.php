@@ -97,7 +97,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/CuentasC/RegistroCliente.blade.php";
+   window.location="http://localhost/cucoaf/vistas/CuentasC/RegistroCliente.blade.php";
   }
 
 
