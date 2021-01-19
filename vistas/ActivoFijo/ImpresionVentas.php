@@ -130,7 +130,8 @@ $pdf->AliasNbPages();
 $pdf->AddPage();
 
 // Logo
-//$pdf->Image('../vistas/logotipo.png', 10, 15, 25);
+$pdf->Image('../minerva.png', 10, 10, 25);
+$pdf->Ln(27);
 // Arial bold 15
 $pdf->SetFont('Times', 'B', 12);
 // Move to the right
