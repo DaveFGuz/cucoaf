@@ -87,8 +87,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
   function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Departamento.blade.php";
-  }else{window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/DepartamentoInactivo.blade.php";}
+     window.location="http://localhost/cucoaf/vistas/ActivoFijo/Departamento.blade.php";
+  }else{window.location="http://localhost/cucoaf/vistas/ActivoFijo/DepartamentoInactivo.blade.php";}
 
 }
     $(document).ready(function () {

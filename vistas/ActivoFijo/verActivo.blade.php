@@ -95,11 +95,11 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/VistaActivo.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/VistaActivo.blade.php";
   }
 
 function envia1(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/depreciar.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/depreciar.blade.php";
   }
  //funcion para que la tabla se llene dinamicamente
   

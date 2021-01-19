@@ -38,8 +38,8 @@ $con=mysqli_connect('localhost','root','','finanzas');
   function sele(){
   var cond= $("#condi").val();
   if (cond==1) {
-     window.location="http://localhost:8081/Proyecto%20Ananlisis%20financieros/Marcas.blade.php";
-  }else{window.location="http://localhost:8081/Proyecto%20Ananlisis%20financieros/MarcasInactivo.blade.php";}
+     window.location="http://localhost/Proyecto%20Ananlisis%20financieros/Marcas.blade.php";
+  }else{window.location="http://localhost/Proyecto%20Ananlisis%20financieros/MarcasInactivo.blade.php";}
 
 }
     $(document).ready(function () {

@@ -87,7 +87,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/Departamento.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/Departamento.blade.php";
   }
 
 

@@ -106,7 +106,7 @@ ini_set('date.timezone', 'America/El_Salvador');
  
  
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/CuentasC/RegistroCliente.blade.php";
+   window.location="http://localhost/cucoaf/vistas/CuentasC/RegistroCliente.blade.php";
   }
 </script>
 <header class="main-header">

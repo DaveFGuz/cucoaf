@@ -91,7 +91,7 @@ $('#nombCo').val(" ");
 }
 
 function envia(){
-   window.location="http://localhost:8081/cucoaf/vistas/ActivoFijo/IngresaInstitucion.blade.php";
+   window.location="http://localhost/cucoaf/vistas/ActivoFijo/IngresaInstitucion.blade.php";
   }
 
 

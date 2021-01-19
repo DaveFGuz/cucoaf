@@ -39,7 +39,7 @@ $con=mysqli_connect('localhost','root','','finanzas');
 
 
 function envia(){
-   window.location="http://localhost:8081/Proyecto%20Ananlisis%20financieros/VistaActivo.blade.php";
+   window.location="http://localhost/Proyecto%20Ananlisis%20financieros/VistaActivo.blade.php";
   }
 
 
